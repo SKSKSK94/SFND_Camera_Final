@@ -251,4 +251,6 @@ Compute the time-to-collision in second for all matched 3D objects using only ke
         double dT = 1 / frameRate;
         TTC = -dT / (1 - medianDistRatio);
     }
-    
+***
+### FP.5 Performance Evaluation 1
+Find examples where the TTC estimate of the Lidar sensor does not seem plausible. Describe your observations and provide a sound argumentation why you think this happened. Several examples (2-3) have been identified and described in detail. The assertion that the TTC is off has been based on manually estimating the distance to the rear of the preceding vehicle from a top view perspective of the Lidar points
