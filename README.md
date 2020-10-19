@@ -286,3 +286,113 @@ This is because distance to preceding car from previous data frame, **meanXPrev*
 ### FP.6 Performance Evaluation 2
 Run several detector / descriptor combinations and look at the differences in TTC estimation. Find out which methods perform best and also include several examples where camera-based TTC estimation is way off. As with Lidar, describe your observations again and also look into potential reasons. All detector / descriptor combinations implemented in previous chapters have been compared with regard to the TTC estimate on a frame-by-frame basis. To facilitate comparison, a spreadsheet and graph should be used to represent the different TTCs.
 
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|    HARRIS|         BRISK|          0000|           nans|           nans|
+|    HARRIS|         BRISK|          0001|       12.6940s|        9.6030s|
+|    HARRIS|         BRISK|          0002|       12.0310s|       12.5101s|
+|    HARRIS|         BRISK|          0003|       17.3639s|       12.0789s|
+|    HARRIS|         BRISK|          0004|       16.0990s|       25.5028s|
+|    HARRIS|         BRISK|          0005|       13.3004s|       13.4692s|
+|    HARRIS|         BRISK|          0006|       13.1047s|       17.5125s|
+|    HARRIS|         BRISK|          0007|       12.1979s|       31.6313s|
+|    HARRIS|         BRISK|          0008|       13.3858s|          -infs|
+|    HARRIS|         BRISK|          0009|       13.4396s|       10.1682s|
+|    HARRIS|         BRISK|          0010|       12.1049s|       11.1726s|
+|    HARRIS|         BRISK|          0011|       12.2210s|           nans|
+|    HARRIS|         BRISK|          0012|        9.2248s|           nans|
+|    HARRIS|         BRISK|          0013|        9.5029s|           nans|
+|    HARRIS|         BRISK|          0014|        9.5302s|           nans|
+|    HARRIS|         BRISK|          0015|        8.1272s|           nans|
+|    HARRIS|         BRISK|          0016|        9.9349s|      -244.9500s|
+|    HARRIS|         BRISK|          0017|       10.5262s|           nans|
+|    HARRIS|         BRISK|          0018|        8.4862s|           nans|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|    HARRIS|         BRIEF|          0000|           nans|           nans|
+|    HARRIS|         BRIEF|          0001|       12.6940s|       56.0386s|
+|    HARRIS|         BRIEF|          0002|       12.0310s|       12.5101s|
+|    HARRIS|         BRIEF|          0003|       17.3639s|       12.7918s|
+|    HARRIS|         BRIEF|          0004|       16.0990s|       40.2406s|
+|    HARRIS|         BRIEF|          0005|       13.3004s|          -infs|
+|    HARRIS|         BRIEF|          0006|       13.1047s|       17.5125s|
+|    HARRIS|         BRIEF|          0007|       12.1979s|          -infs|
+|    HARRIS|         BRIEF|          0008|       13.3858s|          -infs|
+|    HARRIS|         BRIEF|          0009|       13.4396s|       36.6298s|
+|    HARRIS|         BRIEF|          0010|       12.1049s|       11.4720s|
+|    HARRIS|         BRIEF|          0011|       12.2210s|           nans|
+|    HARRIS|         BRIEF|          0012|        9.2248s|           nans|
+|    HARRIS|         BRIEF|          0013|        9.5029s|           nans|
+|    HARRIS|         BRIEF|          0014|        9.5302s|           nans|
+|    HARRIS|         BRIEF|          0015|        8.1272s|           nans|
+|    HARRIS|         BRIEF|          0016|        9.9349s|      -244.9500s|
+|    HARRIS|         BRIEF|          0017|       10.5262s|           nans|
+|    HARRIS|         BRIEF|          0018|        8.4862s|           nans|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|    HARRIS|           ORB|          0000|           nans|           nans|
+|    HARRIS|           ORB|          0001|       12.6940s|       56.0386s|
+|    HARRIS|           ORB|          0002|       12.0310s|       12.5101s|
+|    HARRIS|           ORB|          0003|       17.3639s|       12.7918s|
+|    HARRIS|           ORB|          0004|       16.0990s|       40.2406s|
+|    HARRIS|           ORB|          0005|       13.3004s|          -infs|
+|    HARRIS|           ORB|          0006|       13.1047s|       17.5125s|
+|    HARRIS|           ORB|          0007|       12.1979s|       14.3741s|
+|    HARRIS|           ORB|          0008|       13.3858s|          -infs|
+|    HARRIS|           ORB|          0009|       13.4396s|       36.6298s|
+|    HARRIS|           ORB|          0010|       12.1049s|       11.4720s|
+|    HARRIS|           ORB|          0011|       12.2210s|           nans|
+|    HARRIS|           ORB|          0012|        9.2248s|           nans|
+|    HARRIS|           ORB|          0013|        9.5029s|           nans|
+|    HARRIS|           ORB|          0014|        9.5302s|           nans|
+|    HARRIS|           ORB|          0015|        8.1272s|           nans|
+|    HARRIS|           ORB|          0016|        9.9349s|      -244.9500s|
+|    HARRIS|           ORB|          0017|       10.5262s|           nans|
+|    HARRIS|           ORB|          0018|        8.4862s|           nans|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|    HARRIS|         FREAK|          0000|           nans|           nans|
+|    HARRIS|         FREAK|          0001|       12.6940s|       56.0386s|
+|    HARRIS|         FREAK|          0002|       12.0310s|       12.5101s|
+|    HARRIS|         FREAK|          0003|       17.3639s|       12.0789s|
+|    HARRIS|         FREAK|          0004|       16.0990s|       40.2406s|
+|    HARRIS|         FREAK|          0005|       13.3004s|       13.4692s|
+|    HARRIS|         FREAK|          0006|       13.1047s|       30.2418s|
+|    HARRIS|         FREAK|          0007|       12.1979s|       12.4733s|
+|    HARRIS|         FREAK|          0008|       13.3858s|          -infs|
+|    HARRIS|         FREAK|          0009|       13.4396s|       11.4287s|
+|    HARRIS|         FREAK|          0010|       12.1049s|       11.4720s|
+|    HARRIS|         FREAK|          0011|       12.2210s|           nans|
+|    HARRIS|         FREAK|          0012|        9.2248s|           nans|
+|    HARRIS|         FREAK|          0013|        9.5029s|           nans|
+|    HARRIS|         FREAK|          0014|        9.5302s|           nans|
+|    HARRIS|         FREAK|          0015|        8.1272s|           nans|
+|    HARRIS|         FREAK|          0016|        9.9349s|       -8.5509s|
+|    HARRIS|         FREAK|          0017|       10.5262s|           nans|
+|    HARRIS|         FREAK|          0018|        8.4862s|           nans|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|    HARRIS|          SIFT|          0000|           nans|           nans|
+|    HARRIS|          SIFT|          0001|       12.6940s|       56.0386s|
+|    HARRIS|          SIFT|          0002|       12.0310s|       12.5101s|
+|    HARRIS|          SIFT|          0003|       17.3639s|       12.8630s|
+|    HARRIS|          SIFT|          0004|       16.0990s|       40.2406s|
+|    HARRIS|          SIFT|          0005|       13.3004s|          -infs|
+|    HARRIS|          SIFT|          0006|       13.1047s|       17.5125s|
+|    HARRIS|          SIFT|          0007|       12.1979s|       14.3741s|
+|    HARRIS|          SIFT|          0008|       13.3858s|          -infs|
+|    HARRIS|          SIFT|          0009|       13.4396s|       36.6298s|
+|    HARRIS|          SIFT|          0010|       12.1049s|       11.4720s|
+|    HARRIS|          SIFT|          0011|       12.2210s|           nans|
+|    HARRIS|          SIFT|          0012|        9.2248s|           nans|
+|    HARRIS|          SIFT|          0013|        9.5029s|           nans|
+|    HARRIS|          SIFT|          0014|        9.5302s|           nans|
+|    HARRIS|          SIFT|          0015|        8.1272s|           nans|
+|    HARRIS|          SIFT|          0016|        9.9349s|      -244.9500s|
+|    HARRIS|          SIFT|          0017|       10.5262s|           nans|
+|    HARRIS|          SIFT|          0018|        8.4862s|           nans|
+
