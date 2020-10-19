@@ -396,3 +396,117 @@ Run several detector / descriptor combinations and look at the differences in TT
 |    HARRIS|          SIFT|          0017|       10.5262s|           nans|
 |    HARRIS|          SIFT|          0018|        8.4862s|           nans|
 
+-----------------------------------------------------------------------------
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| SHITOMASI|         BRISK|          0000|           nans|           nans|
+| SHITOMASI|         BRISK|          0001|       12.6940s|       13.8983s|
+| SHITOMASI|         BRISK|          0002|       12.0310s|       12.9008s|
+| SHITOMASI|         BRISK|          0003|       17.3639s|       13.0941s|
+| SHITOMASI|         BRISK|          0004|       16.0990s|       12.8070s|
+| SHITOMASI|         BRISK|          0005|       13.3004s|       13.5029s|
+| SHITOMASI|         BRISK|          0006|       13.1047s|       14.5050s|
+| SHITOMASI|         BRISK|          0007|       12.1979s|       17.3368s|
+| SHITOMASI|         BRISK|          0008|       13.3858s|       13.4822s|
+| SHITOMASI|         BRISK|          0009|       13.4396s|       12.3665s|
+| SHITOMASI|         BRISK|          0010|       12.1049s|       14.7902s|
+| SHITOMASI|         BRISK|          0011|       12.2210s|       11.7727s|
+| SHITOMASI|         BRISK|          0012|        9.2248s|       11.8924s|
+| SHITOMASI|         BRISK|          0013|        9.5029s|       12.4032s|
+| SHITOMASI|         BRISK|          0014|        9.5302s|       11.6245s|
+| SHITOMASI|         BRISK|          0015|        8.1272s|       12.2008s|
+| SHITOMASI|         BRISK|          0016|        9.9349s|       11.0562s|
+| SHITOMASI|         BRISK|          0017|       10.5262s|       10.8961s|
+| SHITOMASI|         BRISK|          0018|        8.4862s|        7.4844s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| SHITOMASI|         BRIEF|          0000|           nans|           nans|
+| SHITOMASI|         BRIEF|          0001|       12.6940s|       14.6343s|
+| SHITOMASI|         BRIEF|          0002|       12.0310s|       13.0553s|
+| SHITOMASI|         BRIEF|          0003|       17.3639s|       14.8637s|
+| SHITOMASI|         BRIEF|          0004|       16.0990s|       13.5840s|
+| SHITOMASI|         BRIEF|          0005|       13.3004s|       14.7159s|
+| SHITOMASI|         BRIEF|          0006|       13.1047s|       14.1989s|
+| SHITOMASI|         BRIEF|          0007|       12.1979s|       17.3469s|
+| SHITOMASI|         BRIEF|          0008|       13.3858s|       13.3620s|
+| SHITOMASI|         BRIEF|          0009|       13.4396s|       12.1524s|
+| SHITOMASI|         BRIEF|          0010|       12.1049s|       13.9940s|
+| SHITOMASI|         BRIEF|          0011|       12.2210s|       12.2139s|
+| SHITOMASI|         BRIEF|          0012|        9.2248s|       12.2462s|
+| SHITOMASI|         BRIEF|          0013|        9.5029s|       11.8895s|
+| SHITOMASI|         BRIEF|          0014|        9.5302s|       12.2951s|
+| SHITOMASI|         BRIEF|          0015|        8.1272s|       13.4113s|
+| SHITOMASI|         BRIEF|          0016|        9.9349s|       12.7817s|
+| SHITOMASI|         BRIEF|          0017|       10.5262s|       11.8612s|
+| SHITOMASI|         BRIEF|          0018|        8.4862s|        8.3820s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| SHITOMASI|           ORB|          0000|           nans|           nans|
+| SHITOMASI|           ORB|          0001|       12.6940s|       14.3373s|
+| SHITOMASI|           ORB|          0002|       12.0310s|       13.3226s|
+| SHITOMASI|           ORB|          0003|       17.3639s|       14.1781s|
+| SHITOMASI|           ORB|          0004|       16.0990s|       12.3351s|
+| SHITOMASI|           ORB|          0005|       13.3004s|       14.1356s|
+| SHITOMASI|           ORB|          0006|       13.1047s|       13.9533s|
+| SHITOMASI|           ORB|          0007|       12.1979s|       16.8540s|
+| SHITOMASI|           ORB|          0008|       13.3858s|       12.9575s|
+| SHITOMASI|           ORB|          0009|       13.4396s|       12.3189s|
+| SHITOMASI|           ORB|          0010|       12.1049s|       13.7999s|
+| SHITOMASI|           ORB|          0011|       12.2210s|       12.2490s|
+| SHITOMASI|           ORB|          0012|        9.2248s|       12.2870s|
+| SHITOMASI|           ORB|          0013|        9.5029s|       12.5998s|
+| SHITOMASI|           ORB|          0014|        9.5302s|       12.2294s|
+| SHITOMASI|           ORB|          0015|        8.1272s|       11.4583s|
+| SHITOMASI|           ORB|          0016|        9.9349s|       12.0362s|
+| SHITOMASI|           ORB|          0017|       10.5262s|       11.4707s|
+| SHITOMASI|           ORB|          0018|        8.4862s|        8.2341s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| SHITOMASI|         FREAK|          0000|           nans|           nans|
+| SHITOMASI|         FREAK|          0001|       12.6940s|       13.8195s|
+| SHITOMASI|         FREAK|          0002|       12.0310s|       13.3121s|
+| SHITOMASI|         FREAK|          0003|       17.3639s|       12.8840s|
+| SHITOMASI|         FREAK|          0004|       16.0990s|       12.7464s|
+| SHITOMASI|         FREAK|          0005|       13.3004s|       13.4423s|
+| SHITOMASI|         FREAK|          0006|       13.1047s|       14.0207s|
+| SHITOMASI|         FREAK|          0007|       12.1979s|       17.7217s|
+| SHITOMASI|         FREAK|          0008|       13.3858s|       12.9116s|
+| SHITOMASI|         FREAK|          0009|       13.4396s|       12.2294s|
+| SHITOMASI|         FREAK|          0010|       12.1049s|       13.5328s|
+| SHITOMASI|         FREAK|          0011|       12.2210s|       11.6809s|
+| SHITOMASI|         FREAK|          0012|        9.2248s|       11.5191s|
+| SHITOMASI|         FREAK|          0013|        9.5029s|       13.0041s|
+| SHITOMASI|         FREAK|          0014|        9.5302s|       11.6442s|
+| SHITOMASI|         FREAK|          0015|        8.1272s|       11.0141s|
+| SHITOMASI|         FREAK|          0016|        9.9349s|       11.6037s|
+| SHITOMASI|         FREAK|          0017|       10.5262s|       11.0073s|
+| SHITOMASI|         FREAK|          0018|        8.4862s|        7.8567s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| SHITOMASI|          SIFT|          0000|           nans|           nans|
+| SHITOMASI|          SIFT|          0001|       12.6940s|       14.6343s|
+| SHITOMASI|          SIFT|          0002|       12.0310s|       13.3226s|
+| SHITOMASI|          SIFT|          0003|       17.3639s|       14.3874s|
+| SHITOMASI|          SIFT|          0004|       16.0990s|       13.0851s|
+| SHITOMASI|          SIFT|          0005|       13.3004s|       13.9639s|
+| SHITOMASI|          SIFT|          0006|       13.1047s|       13.9909s|
+| SHITOMASI|          SIFT|          0007|       12.1979s|       17.0305s|
+| SHITOMASI|          SIFT|          0008|       13.3858s|       13.5459s|
+| SHITOMASI|          SIFT|          0009|       13.4396s|       12.4892s|
+| SHITOMASI|          SIFT|          0010|       12.1049s|       13.8777s|
+| SHITOMASI|          SIFT|          0011|       12.2210s|       12.3866s|
+| SHITOMASI|          SIFT|          0012|        9.2248s|       12.2870s|
+| SHITOMASI|          SIFT|          0013|        9.5029s|       12.6071s|
+| SHITOMASI|          SIFT|          0014|        9.5302s|       11.6442s|
+| SHITOMASI|          SIFT|          0015|        8.1272s|       14.1824s|
+| SHITOMASI|          SIFT|          0016|        9.9349s|       12.3278s|
+| SHITOMASI|          SIFT|          0017|       10.5262s|       11.4781s|
+| SHITOMASI|          SIFT|          0018|        8.4862s|        8.6423s|
+
+-----------------------------------------------------------------------------
+
