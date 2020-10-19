@@ -145,7 +145,7 @@ Prepare the TTC computation based on camera measurements by associating keypoint
  
     // (prev, curr) = (source, ref) = (query, train)
     // associate a given bounding box with the keypoints it contains
-    void clusterKptMatchesWithROI(BoundingBox &boundingBox, std::vector<cv::KeyPoint> &kptsPrev, std::vector<cv::KeyPoint> &kptsCurr, std::vector<cv::DMatch>         &kptMatches)
+    void clusterKptMatchesWithROI(BoundingBox &boundingBox, std::vector<cv::KeyPoint> &kptsPrev, std::vector<cv::KeyPoint> &kptsCurr, std::vector<cv::DMatch>     &kptMatches)
     {
       //**** method  = remove 20% of the high value euclidean distances among keypoints ****//
       double outlierFilterRatio = 0.2; // remove 20% of the high value euclidean distances among keypoints
