@@ -258,7 +258,7 @@ Find examples where the TTC estimate of the Lidar sensor does not seem plausible
 One example of TTC of Lidar in case of <Detector, Descriptor> = <Shi-Tomashi, FREAK> is as follows.
 As you can see bold time in the columns of TTC of Lidar of below table, a sudden increase in TTC has occured. In the formula for calculating the TTC of Lidar, 
 **TTC = meanXCurr * dT / (meanXPrev - meanXCurr)**, a small value change in x in a continuous frame, **(meanXPrev - meanXCurr)**, caused a sudden increase in TTC.
-This is because distance to preceding car from previous data frame, **meanXPrev**, might have been influenced by some point cloud outliers, which result in shorter distance than the actual tailgate. Some outliers can be removed by sorting the x-values in ascending order, removing the front part and back part and calculating the mean for the rest. 
+This is because distance to preceding car from previous data frame, **meanXPrev**, might have been influenced by some point cloud outliers, which result in shorter distance than the actual tailgate. Some outliers can be removed by sorting the x-values in ascending order, removing the front part and back part and calculating the mean for the rest. By doing so, some way off can be removed.
 
 |Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
 |:--------:|:--------:|:--------:|:--------:|:--------:|
