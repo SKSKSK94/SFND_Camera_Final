@@ -256,6 +256,14 @@ Compute the time-to-collision in second for all matched 3D objects using only ke
 Find examples where the TTC estimate of the Lidar sensor does not seem plausible. Describe your observations and provide a sound argumentation why you think this happened. Several examples (2-3) have been identified and described in detail. The assertion that the TTC is off has been based on manually estimating the distance to the rear of the preceding vehicle from a top view perspective of the Lidar points
 
 | Detector type | Descriptor type | Image number |  TTC of Lidar |  TTC of Camera |
-|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| 내용 11 | 내용 12 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 |
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| 내용 11 | 내용 12 | 내용 13 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
