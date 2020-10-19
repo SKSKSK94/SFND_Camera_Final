@@ -257,13 +257,23 @@ Find examples where the TTC estimate of the Lidar sensor does not seem plausible
 
 | Detector type | Descriptor type | Image number |  TTC of Lidar |  TTC of Camera |
 |:--------:|:--------:|:--------:|:--------:|:--------:|
-| 내용 11 | 내용 12 | 내용 13 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 | 내용 13 | 내용 13 |
+| SHITOMASI|         FREAK|          0000|           nans|           nans|
+| SHITOMASI|         FREAK|          0001|       12.6940s|       13.8195s|
+| SHITOMASI|         FREAK|          0002|       12.0310s|       13.3121s|
+| SHITOMASI|         FREAK|          0003|       17.3639s|       12.8840s|
+| SHITOMASI|         FREAK|          0004|       16.0990s|       12.7464s|
+| SHITOMASI|         FREAK|          0005|       13.3004s|       13.4423s|
+| SHITOMASI|         FREAK|          0006|       13.1047s|       14.0207s|
+| SHITOMASI|         FREAK|          0007|       12.1979s|       17.7217s|
+| SHITOMASI|         FREAK|          0008|       13.3858s|       12.9116s|
+| SHITOMASI|         FREAK|          0009|       13.4396s|       12.2294s|
+| SHITOMASI|         FREAK|          0010|       12.1049s|       13.5328s|
+| SHITOMASI|         FREAK|          0011|       12.2210s|       11.6809s|
+| SHITOMASI|         FREAK|          0012|        9.2248s|       11.5191s|
+| SHITOMASI|         FREAK|          0013|        9.5029s|       13.0041s|
+| SHITOMASI|         FREAK|          0014|        9.5302s|       11.6442s|
+| SHITOMASI|         FREAK|          0015|        8.1272s|       11.0141s|
+| SHITOMASI|         FREAK|          0016|        9.9349s|       11.6037s|
+| SHITOMASI|         FREAK|          0017|       10.5262s|       11.0073s|
+| SHITOMASI|         FREAK|          0018|        8.4862s|        7.8567s|
+
