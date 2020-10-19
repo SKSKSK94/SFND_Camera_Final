@@ -88,4 +88,54 @@ Implement the method "matchBoundingBoxes", which takes as input both the previou
           }
        }
     }
-  
+
+### FP.2 Compute Lidar-based TTC
+Compute the time-to-collision in second for all matched 3D objects using only Lidar measurements from the matched bounding boxes between current and previous frame. Code is functional and returns the specified output. Also, the code is able to deal with outlier Lidar points in a statistically robust way to avoid severe estimation errors.
+
+    void computeTTCLidar(std::vector<LidarPoint> &lidarPointsPrev, std::vector<LidarPoint> &lidarPointsCurr, double frameRate, double &TTC)
+    {
+        // auxiliary variables
+        double dT = 1/frameRate;        // time between two measurements in seconds
+        double laneWidth = 4.0; // assumed width of the ego lane
+        double removeFrontRatio = 0.2;
+        double removeEndRatio = 0.4;
+
+        double meanXPrev = 0.0, meanXCurr = 0.0;
+        int xPrevSize = 0, xCurrSize = 0;
+        std::vector<double> xPrev, xCurr;
+        for (auto itr = lidarPointsPrev.begin(); itr != lidarPointsPrev.end(); ++itr)
+        {
+            if (abs(itr->y) > laneWidth/2.0) continue;
+            xPrev.push_back(itr->x);
+        }
+        std::sort(xPrev.begin(), xPrev.end());
+        int sizeVec = xPrev.size();
+        auto xPrevStart = xPrev.begin() + removeFrontRatio*sizeVec;
+        auto xPrevEnd = xPrev.end() - removeEndRatio*sizeVec;
+        for(auto itr = xPrevStart; itr != xPrevEnd; ++itr)
+        {
+            ++xPrevSize;
+            meanXPrev += *itr;
+        }
+        meanXPrev /= xPrevSize;
+
+        for (auto itr = lidarPointsCurr.begin(); itr != lidarPointsCurr.end(); ++itr)
+        {   
+            if (abs(itr->y) > laneWidth/2.0) continue;
+            xCurr.push_back(itr->x);
+
+        }
+        std::sort(xCurr.begin(), xCurr.end());
+        sizeVec = xCurr.size();
+        auto xCurrStart = xCurr.begin() + removeFrontRatio*sizeVec;
+        auto xCurrEnd = xCurr.end() - removeEndRatio*sizeVec;
+        for(auto itr = xCurrStart; itr != xCurrEnd; ++itr)
+        {
+            ++xCurrSize;
+            meanXCurr += *itr;
+        }
+        meanXCurr /= xCurrSize;
+
+        // compute TTC from both measurements
+        TTC = meanXCurr * dT / (meanXPrev - meanXCurr);    
+    }
