@@ -510,3 +510,562 @@ Run several detector / descriptor combinations and look at the differences in TT
 
 -----------------------------------------------------------------------------
 
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      FAST|         BRISK|          0000|           nans|           nans|
+|      FAST|         BRISK|          0001|       12.6940s|       12.7349s|
+|      FAST|         BRISK|          0002|       12.0310s|       11.9539s|
+|      FAST|         BRISK|          0003|       17.3639s|       14.7877s|
+|      FAST|         BRISK|          0004|       16.0990s|       14.1341s|
+|      FAST|         BRISK|          0005|       13.3004s|       41.5667s|
+|      FAST|         BRISK|          0006|       13.1047s|       14.1659s|
+|      FAST|         BRISK|          0007|       12.1979s|       16.9250s|
+|      FAST|         BRISK|          0008|       13.3858s|       12.1201s|
+|      FAST|         BRISK|          0009|       13.4396s|       14.3463s|
+|      FAST|         BRISK|          0010|       12.1049s|       12.9845s|
+|      FAST|         BRISK|          0011|       12.2210s|       13.6706s|
+|      FAST|         BRISK|          0012|        9.2248s|       12.6032s|
+|      FAST|         BRISK|          0013|        9.5029s|       12.4660s|
+|      FAST|         BRISK|          0014|        9.5302s|       12.8125s|
+|      FAST|         BRISK|          0015|        8.1272s|       12.0753s|
+|      FAST|         BRISK|          0016|        9.9349s|       12.6506s|
+|      FAST|         BRISK|          0017|       10.5262s|       10.6880s|
+|      FAST|         BRISK|          0018|        8.4862s|       13.8043s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      FAST|         BRIEF|          0000|           nans|           nans|
+|      FAST|         BRIEF|          0001|       12.6940s|       12.8228s|
+|      FAST|         BRIEF|          0002|       12.0310s|       12.5159s|
+|      FAST|         BRIEF|          0003|       17.3639s|       17.4453s|
+|      FAST|         BRIEF|          0004|       16.0990s|       13.4961s|
+|      FAST|         BRIEF|          0005|       13.3004s|       30.3494s|
+|      FAST|         BRIEF|          0006|       13.1047s|       13.4083s|
+|      FAST|         BRIEF|          0007|       12.1979s|       14.1140s|
+|      FAST|         BRIEF|          0008|       13.3858s|       12.6147s|
+|      FAST|         BRIEF|          0009|       13.4396s|       14.4561s|
+|      FAST|         BRIEF|          0010|       12.1049s|       12.6461s|
+|      FAST|         BRIEF|          0011|       12.2210s|       14.1554s|
+|      FAST|         BRIEF|          0012|        9.2248s|       12.1206s|
+|      FAST|         BRIEF|          0013|        9.5029s|       12.0299s|
+|      FAST|         BRIEF|          0014|        9.5302s|       12.8223s|
+|      FAST|         BRIEF|          0015|        8.1272s|       12.3427s|
+|      FAST|         BRIEF|          0016|        9.9349s|       12.6845s|
+|      FAST|         BRIEF|          0017|       10.5262s|       10.4941s|
+|      FAST|         BRIEF|          0018|        8.4862s|       12.2107s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      FAST|           ORB|          0000|           nans|           nans|
+|      FAST|           ORB|          0001|       12.6940s|       12.5923s|
+|      FAST|           ORB|          0002|       12.0310s|       12.5002s|
+|      FAST|           ORB|          0003|       17.3639s|       18.3711s|
+|      FAST|           ORB|          0004|       16.0990s|       13.4235s|
+|      FAST|           ORB|          0005|       13.3004s|       48.4755s|
+|      FAST|           ORB|          0006|       13.1047s|       13.2487s|
+|      FAST|           ORB|          0007|       12.1979s|       14.5185s|
+|      FAST|           ORB|          0008|       13.3858s|       12.6536s|
+|      FAST|           ORB|          0009|       13.4396s|       14.4561s|
+|      FAST|           ORB|          0010|       12.1049s|       12.8734s|
+|      FAST|           ORB|          0011|       12.2210s|       14.6373s|
+|      FAST|           ORB|          0012|        9.2248s|       12.4836s|
+|      FAST|           ORB|          0013|        9.5029s|       12.7008s|
+|      FAST|           ORB|          0014|        9.5302s|       12.6587s|
+|      FAST|           ORB|          0015|        8.1272s|       12.0541s|
+|      FAST|           ORB|          0016|        9.9349s|       12.6413s|
+|      FAST|           ORB|          0017|       10.5262s|       11.2503s|
+|      FAST|           ORB|          0018|        8.4862s|       14.1744s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      FAST|         FREAK|          0000|           nans|           nans|
+|      FAST|         FREAK|          0001|       12.6940s|       12.4196s|
+|      FAST|         FREAK|          0002|       12.0310s|       13.8461s|
+|      FAST|         FREAK|          0003|       17.3639s|       16.1950s|
+|      FAST|         FREAK|          0004|       16.0990s|       14.7054s|
+|      FAST|         FREAK|          0005|       13.3004s|       39.5129s|
+|      FAST|         FREAK|          0006|       13.1047s|       12.5303s|
+|      FAST|         FREAK|          0007|       12.1979s|       15.0592s|
+|      FAST|         FREAK|          0008|       13.3858s|       12.4368s|
+|      FAST|         FREAK|          0009|       13.4396s|       13.7589s|
+|      FAST|         FREAK|          0010|       12.1049s|       12.4930s|
+|      FAST|         FREAK|          0011|       12.2210s|       13.4364s|
+|      FAST|         FREAK|          0012|        9.2248s|       12.7616s|
+|      FAST|         FREAK|          0013|        9.5029s|       12.5265s|
+|      FAST|         FREAK|          0014|        9.5302s|       12.6069s|
+|      FAST|         FREAK|          0015|        8.1272s|       11.8620s|
+|      FAST|         FREAK|          0016|        9.9349s|       13.0069s|
+|      FAST|         FREAK|          0017|       10.5262s|       11.5339s|
+|      FAST|         FREAK|          0018|        8.4862s|       11.7957s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      FAST|          SIFT|          0000|           nans|           nans|
+|      FAST|          SIFT|          0001|       12.6940s|       12.7505s|
+|      FAST|          SIFT|          0002|       12.0310s|       11.8668s|
+|      FAST|          SIFT|          0003|       17.3639s|       20.9723s|
+|      FAST|          SIFT|          0004|       16.0990s|       14.3697s|
+|      FAST|          SIFT|          0005|       13.3004s|       55.9611s|
+|      FAST|          SIFT|          0006|       13.1047s|       13.9917s|
+|      FAST|          SIFT|          0007|       12.1979s|       14.0397s|
+|      FAST|          SIFT|          0008|       13.3858s|       12.3263s|
+|      FAST|          SIFT|          0009|       13.4396s|       14.4348s|
+|      FAST|          SIFT|          0010|       12.1049s|       12.6126s|
+|      FAST|          SIFT|          0011|       12.2210s|       14.8780s|
+|      FAST|          SIFT|          0012|        9.2248s|       11.5057s|
+|      FAST|          SIFT|          0013|        9.5029s|       12.3379s|
+|      FAST|          SIFT|          0014|        9.5302s|       12.3278s|
+|      FAST|          SIFT|          0015|        8.1272s|       11.6734s|
+|      FAST|          SIFT|          0016|        9.9349s|       12.3677s|
+|      FAST|          SIFT|          0017|       10.5262s|       11.6657s|
+|      FAST|          SIFT|          0018|        8.4862s|       11.7451s|
+
+-----------------------------------------------------------------------------
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     BRISK|         BRISK|          0000|           nans|           nans|
+|     BRISK|         BRISK|          0001|       12.6940s|       17.5941s|
+|     BRISK|         BRISK|          0002|       12.0310s|       26.8505s|
+|     BRISK|         BRISK|          0003|       17.3639s|       19.2280s|
+|     BRISK|         BRISK|          0004|       16.0990s|       18.1887s|
+|     BRISK|         BRISK|          0005|       13.3004s|       29.0754s|
+|     BRISK|         BRISK|          0006|       13.1047s|       24.3089s|
+|     BRISK|         BRISK|          0007|       12.1979s|       29.4660s|
+|     BRISK|         BRISK|          0008|       13.3858s|       16.5358s|
+|     BRISK|         BRISK|          0009|       13.4396s|       18.9180s|
+|     BRISK|         BRISK|          0010|       12.1049s|       15.9976s|
+|     BRISK|         BRISK|          0011|       12.2210s|       15.0965s|
+|     BRISK|         BRISK|          0012|        9.2248s|       12.7072s|
+|     BRISK|         BRISK|          0013|        9.5029s|       12.2005s|
+|     BRISK|         BRISK|          0014|        9.5302s|       15.9117s|
+|     BRISK|         BRISK|          0015|        8.1272s|       13.9605s|
+|     BRISK|         BRISK|          0016|        9.9349s|       13.4019s|
+|     BRISK|         BRISK|          0017|       10.5262s|       11.5163s|
+|     BRISK|         BRISK|          0018|        8.4862s|       14.3220s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     BRISK|         BRIEF|          0000|           nans|           nans|
+|     BRISK|         BRIEF|          0001|       12.6940s|       14.9055s|
+|     BRISK|         BRIEF|          0002|       12.0310s|       23.0425s|
+|     BRISK|         BRIEF|          0003|       17.3639s|       19.1297s|
+|     BRISK|         BRIEF|          0004|       16.0990s|       22.6850s|
+|     BRISK|         BRIEF|          0005|       13.3004s|       19.3827s|
+|     BRISK|         BRIEF|          0006|       13.1047s|       28.8309s|
+|     BRISK|         BRIEF|          0007|       12.1979s|       25.1930s|
+|     BRISK|         BRIEF|          0008|       13.3858s|       19.3001s|
+|     BRISK|         BRIEF|          0009|       13.4396s|       22.0864s|
+|     BRISK|         BRIEF|          0010|       12.1049s|       16.2644s|
+|     BRISK|         BRIEF|          0011|       12.2210s|       14.9321s|
+|     BRISK|         BRIEF|          0012|        9.2248s|       16.8288s|
+|     BRISK|         BRIEF|          0013|        9.5029s|       13.0474s|
+|     BRISK|         BRIEF|          0014|        9.5302s|       16.1756s|
+|     BRISK|         BRIEF|          0015|        8.1272s|       13.7789s|
+|     BRISK|         BRIEF|          0016|        9.9349s|       14.0256s|
+|     BRISK|         BRIEF|          0017|       10.5262s|       13.1816s|
+|     BRISK|         BRIEF|          0018|        8.4862s|       13.6771s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     BRISK|           ORB|          0000|           nans|           nans|
+|     BRISK|           ORB|          0001|       12.6940s|       18.7747s|
+|     BRISK|           ORB|          0002|       12.0310s|       22.9000s|
+|     BRISK|           ORB|          0003|       17.3639s|       20.2640s|
+|     BRISK|           ORB|          0004|       16.0990s|       20.6342s|
+|     BRISK|           ORB|          0005|       13.3004s|       22.9633s|
+|     BRISK|           ORB|          0006|       13.1047s|       22.9839s|
+|     BRISK|           ORB|          0007|       12.1979s|       24.8693s|
+|     BRISK|           ORB|          0008|       13.3858s|       18.1632s|
+|     BRISK|           ORB|          0009|       13.4396s|       20.1061s|
+|     BRISK|           ORB|          0010|       12.1049s|       15.4474s|
+|     BRISK|           ORB|          0011|       12.2210s|       16.4451s|
+|     BRISK|           ORB|          0012|        9.2248s|       13.7577s|
+|     BRISK|           ORB|          0013|        9.5029s|       12.9999s|
+|     BRISK|           ORB|          0014|        9.5302s|       15.9064s|
+|     BRISK|           ORB|          0015|        8.1272s|       15.2110s|
+|     BRISK|           ORB|          0016|        9.9349s|       13.8079s|
+|     BRISK|           ORB|          0017|       10.5262s|       11.4080s|
+|     BRISK|           ORB|          0018|        8.4862s|       14.7506s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     BRISK|         FREAK|          0000|           nans|           nans|
+|     BRISK|         FREAK|          0001|       12.6940s|       17.5975s|
+|     BRISK|         FREAK|          0002|       12.0310s|       24.3133s|
+|     BRISK|         FREAK|          0003|       17.3639s|       18.9989s|
+|     BRISK|         FREAK|          0004|       16.0990s|       15.3470s|
+|     BRISK|         FREAK|          0005|       13.3004s|       30.1017s|
+|     BRISK|         FREAK|          0006|       13.1047s|       19.5104s|
+|     BRISK|         FREAK|          0007|       12.1979s|       23.4160s|
+|     BRISK|         FREAK|          0008|       13.3858s|       17.1189s|
+|     BRISK|         FREAK|          0009|       13.4396s|       18.6577s|
+|     BRISK|         FREAK|          0010|       12.1049s|       14.7642s|
+|     BRISK|         FREAK|          0011|       12.2210s|       14.8411s|
+|     BRISK|         FREAK|          0012|        9.2248s|       12.3387s|
+|     BRISK|         FREAK|          0013|        9.5029s|       12.9704s|
+|     BRISK|         FREAK|          0014|        9.5302s|       16.1370s|
+|     BRISK|         FREAK|          0015|        8.1272s|       14.9891s|
+|     BRISK|         FREAK|          0016|        9.9349s|       12.3828s|
+|     BRISK|         FREAK|          0017|       10.5262s|       10.7686s|
+|     BRISK|         FREAK|          0018|        8.4862s|       13.8477s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     BRISK|          SIFT|          0000|           nans|           nans|
+|     BRISK|          SIFT|          0001|       12.6940s|       17.2788s|
+|     BRISK|          SIFT|          0002|       12.0310s|       18.7891s|
+|     BRISK|          SIFT|          0003|       17.3639s|       20.1856s|
+|     BRISK|          SIFT|          0004|       16.0990s|       14.8334s|
+|     BRISK|          SIFT|          0005|       13.3004s|       28.2877s|
+|     BRISK|          SIFT|          0006|       13.1047s|       17.6358s|
+|     BRISK|          SIFT|          0007|       12.1979s|       15.0635s|
+|     BRISK|          SIFT|          0008|       13.3858s|       15.2211s|
+|     BRISK|          SIFT|          0009|       13.4396s|       15.1894s|
+|     BRISK|          SIFT|          0010|       12.1049s|       14.6158s|
+|     BRISK|          SIFT|          0011|       12.2210s|       11.9260s|
+|     BRISK|          SIFT|          0012|        9.2248s|       11.9286s|
+|     BRISK|          SIFT|          0013|        9.5029s|       12.4028s|
+|     BRISK|          SIFT|          0014|        9.5302s|       13.3204s|
+|     BRISK|          SIFT|          0015|        8.1272s|       13.4952s|
+|     BRISK|          SIFT|          0016|        9.9349s|       11.2916s|
+|     BRISK|          SIFT|          0017|       10.5262s|       11.0207s|
+|     BRISK|          SIFT|          0018|        8.4862s|       11.6379s|
+
+-----------------------------------------------------------------------------
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|       ORB|         BRISK|          0000|           nans|           nans|
+|       ORB|         BRISK|          0001|       12.6940s|       16.7826s|
+|       ORB|         BRISK|          0002|       12.0310s|       10.1192s|
+|       ORB|         BRISK|          0003|       17.3639s|       24.2494s|
+|       ORB|         BRISK|          0004|       16.0990s|       19.3375s|
+|       ORB|         BRISK|          0005|       13.3004s|       45.5018s|
+|       ORB|         BRISK|          0006|       13.1047s|       32.0020s|
+|       ORB|         BRISK|          0007|       12.1979s|          -infs|
+|       ORB|         BRISK|          0008|       13.3858s|       12.7867s|
+|       ORB|         BRISK|          0009|       13.4396s|       21.5135s|
+|       ORB|         BRISK|          0010|       12.1049s|          -infs|
+|       ORB|         BRISK|          0011|       12.2210s|        8.4254s|
+|       ORB|         BRISK|          0012|        9.2248s|          -infs|
+|       ORB|         BRISK|          0013|        9.5029s|       11.6384s|
+|       ORB|         BRISK|          0014|        9.5302s|       27.8458s|
+|       ORB|         BRISK|          0015|        8.1272s|       13.6463s|
+|       ORB|         BRISK|          0016|        9.9349s|       35.0129s|
+|       ORB|         BRISK|          0017|       10.5262s|       20.3758s|
+|       ORB|         BRISK|          0018|        8.4862s|       42.9951s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|       ORB|         BRIEF|          0000|           nans|           nans|
+|       ORB|         BRIEF|          0001|       12.6940s|       24.1759s|
+|       ORB|         BRIEF|          0002|       12.0310s|          -infs|
+|       ORB|         BRIEF|          0003|       17.3639s|       44.7040s|
+|       ORB|         BRIEF|          0004|       16.0990s|       17.5321s|
+|       ORB|         BRIEF|          0005|       13.3004s|       35.4197s|
+|       ORB|         BRIEF|          0006|       13.1047s|       31.7015s|
+|       ORB|         BRIEF|          0007|       12.1979s|          -infs|
+|       ORB|         BRIEF|          0008|       13.3858s|       18.3178s|
+|       ORB|         BRIEF|          0009|       13.4396s|      195.2898s|
+|       ORB|         BRIEF|          0010|       12.1049s|       52.1582s|
+|       ORB|         BRIEF|          0011|       12.2210s|       25.2823s|
+|       ORB|         BRIEF|          0012|        9.2248s|       16.2227s|
+|       ORB|         BRIEF|          0013|        9.5029s|       13.4321s|
+|       ORB|         BRIEF|          0014|        9.5302s|       60.6236s|
+|       ORB|         BRIEF|          0015|        8.1272s|       45.5112s|
+|       ORB|         BRIEF|          0016|        9.9349s|       24.5366s|
+|       ORB|         BRIEF|          0017|       10.5262s|       15.0441s|
+|       ORB|         BRIEF|          0018|        8.4862s|       28.2631s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|       ORB|           ORB|          0000|           nans|           nans|
+|       ORB|           ORB|          0001|       12.6940s|       37.6140s|
+|       ORB|           ORB|          0002|       12.0310s|       10.1802s|
+|       ORB|           ORB|          0003|       17.3639s|       22.3594s|
+|       ORB|           ORB|          0004|       16.0990s|       21.8457s|
+|       ORB|           ORB|          0005|       13.3004s|      163.2342s|
+|       ORB|           ORB|          0006|       13.1047s|          -infs|
+|       ORB|           ORB|          0007|       12.1979s|          -infs|
+|       ORB|           ORB|          0008|       13.3858s|       15.7290s|
+|       ORB|           ORB|          0009|       13.4396s|       21.1185s|
+|       ORB|           ORB|          0010|       12.1049s|          -infs|
+|       ORB|           ORB|          0011|       12.2210s|       10.0197s|
+|       ORB|           ORB|          0012|        9.2248s|          -infs|
+|       ORB|           ORB|          0013|        9.5029s|          -infs|
+|       ORB|           ORB|          0014|        9.5302s|          -infs|
+|       ORB|           ORB|          0015|        8.1272s|      144.1523s|
+|       ORB|           ORB|          0016|        9.9349s|       22.2594s|
+|       ORB|           ORB|          0017|       10.5262s|       11.2808s|
+|       ORB|           ORB|          0018|        8.4862s|       82.6523s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|       ORB|         FREAK|          0000|           nans|           nans|
+|       ORB|         FREAK|          0001|       12.6940s|       15.8586s|
+|       ORB|         FREAK|          0002|       12.0310s|       17.2527s|
+|       ORB|         FREAK|          0003|       17.3639s|       19.8566s|
+|       ORB|         FREAK|          0004|       16.0990s|       12.6081s|
+|       ORB|         FREAK|          0005|       13.3004s|       45.5018s|
+|       ORB|         FREAK|          0006|       13.1047s|       57.0977s|
+|       ORB|         FREAK|          0007|       12.1979s|          -infs|
+|       ORB|         FREAK|          0008|       13.3858s|        9.7842s|
+|       ORB|         FREAK|          0009|       13.4396s|       15.9762s|
+|       ORB|         FREAK|          0010|       12.1049s|       65.6540s|
+|       ORB|         FREAK|          0011|       12.2210s|        8.1489s|
+|       ORB|         FREAK|          0012|        9.2248s|       50.7145s|
+|       ORB|         FREAK|          0013|        9.5029s|        9.3572s|
+|       ORB|         FREAK|          0014|        9.5302s|       54.2226s|
+|       ORB|         FREAK|          0015|        8.1272s|        8.5350s|
+|       ORB|         FREAK|          0016|        9.9349s|       10.4631s|
+|       ORB|         FREAK|          0017|       10.5262s|        6.9482s|
+|       ORB|         FREAK|          0018|        8.4862s|       24.1855s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|       ORB|          SIFT|          0000|           nans|           nans|
+|       ORB|          SIFT|          0001|       12.6940s|       14.4902s|
+|       ORB|          SIFT|          0002|       12.0310s|        9.5420s|
+|       ORB|          SIFT|          0003|       17.3639s|       15.8576s|
+|       ORB|          SIFT|          0004|       16.0990s|       23.2249s|
+|       ORB|          SIFT|          0005|       13.3004s|       29.8659s|
+|       ORB|          SIFT|          0006|       13.1047s|       16.4949s|
+|       ORB|          SIFT|          0007|       12.1979s|      906.5233s|
+|       ORB|          SIFT|          0008|       13.3858s|       12.9210s|
+|       ORB|          SIFT|          0009|       13.4396s|       13.7532s|
+|       ORB|          SIFT|          0010|       12.1049s|          -infs|
+|       ORB|          SIFT|          0011|       12.2210s|        7.9560s|
+|       ORB|          SIFT|          0012|        9.2248s|       16.8999s|
+|       ORB|          SIFT|          0013|        9.5029s|       10.6768s|
+|       ORB|          SIFT|          0014|        9.5302s|       18.5566s|
+|       ORB|          SIFT|          0015|        8.1272s|          -infs|
+|       ORB|          SIFT|          0016|        9.9349s|       11.4315s|
+|       ORB|          SIFT|          0017|       10.5262s|       11.1814s|
+|       ORB|          SIFT|          0018|        8.4862s|       23.3647s|
+
+-----------------------------------------------------------------------------
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     AKAZE|         BRISK|          0000|           nans|           nans|
+|     AKAZE|         BRISK|          0001|       12.6940s|       15.9469s|
+|     AKAZE|         BRISK|          0002|       12.0310s|       17.8169s|
+|     AKAZE|         BRISK|          0003|       17.3639s|       16.2678s|
+|     AKAZE|         BRISK|          0004|       16.0990s|       15.3951s|
+|     AKAZE|         BRISK|          0005|       13.3004s|       17.1252s|
+|     AKAZE|         BRISK|          0006|       13.1047s|       19.1867s|
+|     AKAZE|         BRISK|          0007|       12.1979s|       21.7614s|
+|     AKAZE|         BRISK|          0008|       13.3858s|       17.1293s|
+|     AKAZE|         BRISK|          0009|       13.4396s|       17.2759s|
+|     AKAZE|         BRISK|          0010|       12.1049s|       13.0903s|
+|     AKAZE|         BRISK|          0011|       12.2210s|       14.2321s|
+|     AKAZE|         BRISK|          0012|        9.2248s|       12.6941s|
+|     AKAZE|         BRISK|          0013|        9.5029s|       11.8704s|
+|     AKAZE|         BRISK|          0014|        9.5302s|       11.8377s|
+|     AKAZE|         BRISK|          0015|        8.1272s|       14.9621s|
+|     AKAZE|         BRISK|          0016|        9.9349s|       12.6351s|
+|     AKAZE|         BRISK|          0017|       10.5262s|       10.8491s|
+|     AKAZE|         BRISK|          0018|        8.4862s|        9.9450s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     AKAZE|         BRIEF|          0000|           nans|           nans|
+|     AKAZE|         BRIEF|          0001|       12.6940s|       20.8162s|
+|     AKAZE|         BRIEF|          0002|       12.0310s|       17.6241s|
+|     AKAZE|         BRIEF|          0003|       17.3639s|       15.8624s|
+|     AKAZE|         BRIEF|          0004|       16.0990s|       15.6698s|
+|     AKAZE|         BRIEF|          0005|       13.3004s|       17.6416s|
+|     AKAZE|         BRIEF|          0006|       13.1047s|       17.5862s|
+|     AKAZE|         BRIEF|          0007|       12.1979s|       20.4121s|
+|     AKAZE|         BRIEF|          0008|       13.3858s|       17.0796s|
+|     AKAZE|         BRIEF|          0009|       13.4396s|       18.4164s|
+|     AKAZE|         BRIEF|          0010|       12.1049s|       12.4503s|
+|     AKAZE|         BRIEF|          0011|       12.2210s|       13.9969s|
+|     AKAZE|         BRIEF|          0012|        9.2248s|       13.9496s|
+|     AKAZE|         BRIEF|          0013|        9.5029s|       11.5248s|
+|     AKAZE|         BRIEF|          0014|        9.5302s|       11.6523s|
+|     AKAZE|         BRIEF|          0015|        8.1272s|       12.0581s|
+|     AKAZE|         BRIEF|          0016|        9.9349s|       12.0309s|
+|     AKAZE|         BRIEF|          0017|       10.5262s|       10.8945s|
+|     AKAZE|         BRIEF|          0018|        8.4862s|       10.5249s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     AKAZE|           ORB|          0000|           nans|           nans|
+|     AKAZE|           ORB|          0001|       12.6940s|       16.0811s|
+|     AKAZE|           ORB|          0002|       12.0310s|       17.3441s|
+|     AKAZE|           ORB|          0003|       17.3639s|       15.2794s|
+|     AKAZE|           ORB|          0004|       16.0990s|       15.9317s|
+|     AKAZE|           ORB|          0005|       13.3004s|       17.3218s|
+|     AKAZE|           ORB|          0006|       13.1047s|       17.3384s|
+|     AKAZE|           ORB|          0007|       12.1979s|       19.9245s|
+|     AKAZE|           ORB|          0008|       13.3858s|       16.7307s|
+|     AKAZE|           ORB|          0009|       13.4396s|       17.8242s|
+|     AKAZE|           ORB|          0010|       12.1049s|       12.7257s|
+|     AKAZE|           ORB|          0011|       12.2210s|       14.0523s|
+|     AKAZE|           ORB|          0012|        9.2248s|       14.9698s|
+|     AKAZE|           ORB|          0013|        9.5029s|       11.8578s|
+|     AKAZE|           ORB|          0014|        9.5302s|       12.2273s|
+|     AKAZE|           ORB|          0015|        8.1272s|       14.7306s|
+|     AKAZE|           ORB|          0016|        9.9349s|       11.5271s|
+|     AKAZE|           ORB|          0017|       10.5262s|       10.6337s|
+|     AKAZE|           ORB|          0018|        8.4862s|       10.6225s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     AKAZE|         FREAK|          0000|           nans|           nans|
+|     AKAZE|         FREAK|          0001|       12.6940s|       15.7402s|
+|     AKAZE|         FREAK|          0002|       12.0310s|       17.6571s|
+|     AKAZE|         FREAK|          0003|       17.3639s|       16.5485s|
+|     AKAZE|         FREAK|          0004|       16.0990s|       15.2564s|
+|     AKAZE|         FREAK|          0005|       13.3004s|       17.7390s|
+|     AKAZE|         FREAK|          0006|       13.1047s|       17.8397s|
+|     AKAZE|         FREAK|          0007|       12.1979s|       20.8023s|
+|     AKAZE|         FREAK|          0008|       13.3858s|       16.9250s|
+|     AKAZE|         FREAK|          0009|       13.4396s|       18.1219s|
+|     AKAZE|         FREAK|          0010|       12.1049s|       13.7871s|
+|     AKAZE|         FREAK|          0011|       12.2210s|       14.2653s|
+|     AKAZE|         FREAK|          0012|        9.2248s|       14.7644s|
+|     AKAZE|         FREAK|          0013|        9.5029s|       11.6331s|
+|     AKAZE|         FREAK|          0014|        9.5302s|       11.3156s|
+|     AKAZE|         FREAK|          0015|        8.1272s|       12.6697s|
+|     AKAZE|         FREAK|          0016|        9.9349s|       12.9769s|
+|     AKAZE|         FREAK|          0017|       10.5262s|       10.9091s|
+|     AKAZE|         FREAK|          0018|        8.4862s|        9.8091s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     AKAZE|         AKAZE|          0000|           nans|           nans|
+|     AKAZE|         AKAZE|          0001|       12.6940s|       16.8159s|
+|     AKAZE|         AKAZE|          0002|       12.0310s|       17.7118s|
+|     AKAZE|         AKAZE|          0003|       17.3639s|       15.5471s|
+|     AKAZE|         AKAZE|          0004|       16.0990s|       17.0062s|
+|     AKAZE|         AKAZE|          0005|       13.3004s|       17.7416s|
+|     AKAZE|         AKAZE|          0006|       13.1047s|       16.8094s|
+|     AKAZE|         AKAZE|          0007|       12.1979s|       18.9116s|
+|     AKAZE|         AKAZE|          0008|       13.3858s|       16.8142s|
+|     AKAZE|         AKAZE|          0009|       13.4396s|       16.9813s|
+|     AKAZE|         AKAZE|          0010|       12.1049s|       13.2078s|
+|     AKAZE|         AKAZE|          0011|       12.2210s|       13.3483s|
+|     AKAZE|         AKAZE|          0012|        9.2248s|       13.2811s|
+|     AKAZE|         AKAZE|          0013|        9.5029s|       12.0634s|
+|     AKAZE|         AKAZE|          0014|        9.5302s|       11.9308s|
+|     AKAZE|         AKAZE|          0015|        8.1272s|       12.5649s|
+|     AKAZE|         AKAZE|          0016|        9.9349s|       11.7735s|
+|     AKAZE|         AKAZE|          0017|       10.5262s|       10.6148s|
+|     AKAZE|         AKAZE|          0018|        8.4862s|       10.2548s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|     AKAZE|          SIFT|          0000|           nans|           nans|
+|     AKAZE|          SIFT|          0001|       12.6940s|       16.9605s|
+|     AKAZE|          SIFT|          0002|       12.0310s|       17.2272s|
+|     AKAZE|          SIFT|          0003|       17.3639s|       15.5654s|
+|     AKAZE|          SIFT|          0004|       16.0990s|       17.2530s|
+|     AKAZE|          SIFT|          0005|       13.3004s|       18.0108s|
+|     AKAZE|          SIFT|          0006|       13.1047s|       17.4215s|
+|     AKAZE|          SIFT|          0007|       12.1979s|       19.5604s|
+|     AKAZE|          SIFT|          0008|       13.3858s|       16.4822s|
+|     AKAZE|          SIFT|          0009|       13.4396s|       17.0641s|
+|     AKAZE|          SIFT|          0010|       12.1049s|       13.0747s|
+|     AKAZE|          SIFT|          0011|       12.2210s|       13.3573s|
+|     AKAZE|          SIFT|          0012|        9.2248s|       13.2902s|
+|     AKAZE|          SIFT|          0013|        9.5029s|       12.1820s|
+|     AKAZE|          SIFT|          0014|        9.5302s|       11.8017s|
+|     AKAZE|          SIFT|          0015|        8.1272s|       12.7103s|
+|     AKAZE|          SIFT|          0016|        9.9349s|       11.2770s|
+|     AKAZE|          SIFT|          0017|       10.5262s|       10.5009s|
+|     AKAZE|          SIFT|          0018|        8.4862s|        9.9836s|
+
+-----------------------------------------------------------------------------
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      SIFT|         BRISK|          0000|           nans|           nans|
+|      SIFT|         BRISK|          0001|       12.6940s|       15.5906s|
+|      SIFT|         BRISK|          0002|       12.0310s|       17.8582s|
+|      SIFT|         BRISK|          0003|       17.3639s|       22.1008s|
+|      SIFT|         BRISK|          0004|       16.0990s|       22.7348s|
+|      SIFT|         BRISK|          0005|       13.3004s|       17.5141s|
+|      SIFT|         BRISK|          0006|       13.1047s|       20.9884s|
+|      SIFT|         BRISK|          0007|       12.1979s|       21.0563s|
+|      SIFT|         BRISK|          0008|       13.3858s|       18.5753s|
+|      SIFT|         BRISK|          0009|       13.4396s|       15.7640s|
+|      SIFT|         BRISK|          0010|       12.1049s|       11.4007s|
+|      SIFT|         BRISK|          0011|       12.2210s|       15.3544s|
+|      SIFT|         BRISK|          0012|        9.2248s|       11.4263s|
+|      SIFT|         BRISK|          0013|        9.5029s|       11.2556s|
+|      SIFT|         BRISK|          0014|        9.5302s|       11.7701s|
+|      SIFT|         BRISK|          0015|        8.1272s|        9.9716s|
+|      SIFT|         BRISK|          0016|        9.9349s|        9.7441s|
+|      SIFT|         BRISK|          0017|       10.5262s|       10.9129s|
+|      SIFT|         BRISK|          0018|        8.4862s|       12.8614s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      SIFT|         BRIEF|          0000|           nans|           nans|
+|      SIFT|         BRIEF|          0001|       12.6940s|       16.5194s|
+|      SIFT|         BRIEF|          0002|       12.0310s|       13.8293s|
+|      SIFT|         BRIEF|          0003|       17.3639s|       17.4897s|
+|      SIFT|         BRIEF|          0004|       16.0990s|       22.7348s|
+|      SIFT|         BRIEF|          0005|       13.3004s|       17.5891s|
+|      SIFT|         BRIEF|          0006|       13.1047s|       15.7286s|
+|      SIFT|         BRIEF|          0007|       12.1979s|       18.1654s|
+|      SIFT|         BRIEF|          0008|       13.3858s|       17.4125s|
+|      SIFT|         BRIEF|          0009|       13.4396s|       13.0992s|
+|      SIFT|         BRIEF|          0010|       12.1049s|       10.2220s|
+|      SIFT|         BRIEF|          0011|       12.2210s|       13.8759s|
+|      SIFT|         BRIEF|          0012|        9.2248s|       10.6914s|
+|      SIFT|         BRIEF|          0013|        9.5029s|       11.2580s|
+|      SIFT|         BRIEF|          0014|        9.5302s|       11.7298s|
+|      SIFT|         BRIEF|          0015|        8.1272s|       10.9479s|
+|      SIFT|         BRIEF|          0016|        9.9349s|        9.5675s|
+|      SIFT|         BRIEF|          0017|       10.5262s|       11.2464s|
+|      SIFT|         BRIEF|          0018|        8.4862s|       12.5151s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      SIFT|         FREAK|          0000|           nans|           nans|
+|      SIFT|         FREAK|          0001|       12.6940s|       16.3965s|
+|      SIFT|         FREAK|          0002|       12.0310s|       18.3606s|
+|      SIFT|         FREAK|          0003|       17.3639s|       22.2537s|
+|      SIFT|         FREAK|          0004|       16.0990s|       21.8187s|
+|      SIFT|         FREAK|          0005|       13.3004s|       21.8638s|
+|      SIFT|         FREAK|          0006|       13.1047s|       17.3353s|
+|      SIFT|         FREAK|          0007|       12.1979s|       19.9302s|
+|      SIFT|         FREAK|          0008|       13.3858s|       17.0116s|
+|      SIFT|         FREAK|          0009|       13.4396s|       15.4507s|
+|      SIFT|         FREAK|          0010|       12.1049s|       11.4295s|
+|      SIFT|         FREAK|          0011|       12.2210s|       15.1196s|
+|      SIFT|         FREAK|          0012|        9.2248s|       11.4393s|
+|      SIFT|         FREAK|          0013|        9.5029s|       10.7286s|
+|      SIFT|         FREAK|          0014|        9.5302s|       11.7025s|
+|      SIFT|         FREAK|          0015|        8.1272s|       10.5617s|
+|      SIFT|         FREAK|          0016|        9.9349s|       10.1457s|
+|      SIFT|         FREAK|          0017|       10.5262s|       10.4312s|
+|      SIFT|         FREAK|          0018|        8.4862s|       12.0489s|
+
+|Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|      SIFT|          SIFT|          0000|           nans|           nans|
+|      SIFT|          SIFT|          0001|       12.6940s|       14.8482s|
+|      SIFT|          SIFT|          0002|       12.0310s|       17.0145s|
+|      SIFT|          SIFT|          0003|       17.3639s|       17.0855s|
+|      SIFT|          SIFT|          0004|       16.0990s|       23.8457s|
+|      SIFT|          SIFT|          0005|       13.3004s|       16.6151s|
+|      SIFT|          SIFT|          0006|       13.1047s|       18.4668s|
+|      SIFT|          SIFT|          0007|       12.1979s|       16.7137s|
+|      SIFT|          SIFT|          0008|       13.3858s|       18.1649s|
+|      SIFT|          SIFT|          0009|       13.4396s|       14.4615s|
+|      SIFT|          SIFT|          0010|       12.1049s|       11.3295s|
+|      SIFT|          SIFT|          0011|       12.2210s|       14.5464s|
+|      SIFT|          SIFT|          0012|        9.2248s|       12.6781s|
+|      SIFT|          SIFT|          0013|        9.5029s|       11.6395s|
+|      SIFT|          SIFT|          0014|        9.5302s|       11.5741s|
+|      SIFT|          SIFT|          0015|        8.1272s|       10.9398s|
+|      SIFT|          SIFT|          0016|        9.9349s|        9.7848s|
+|      SIFT|          SIFT|          0017|       10.5262s|       10.2891s|
+|      SIFT|          SIFT|          0018|        8.4862s|       11.1022s|
+
+-----------------------------------------------------------------------------
