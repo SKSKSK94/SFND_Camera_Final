@@ -140,3 +140,48 @@ Compute the time-to-collision in second for all matched 3D objects using only Li
       TTC = meanXCurr * dT / (meanXPrev - meanXCurr);    
     }
 ***
+### FP.3 Associate Keypoint Correspondences with Bounding Boxes
+Prepare the TTC computation based on camera measurements by associating keypoint correspondences to the bounding boxes which enclose them. All matches which satisfy this condition must be added to a vector in the respective bounding box. Code performs as described and adds the keypoint correspondences to the "kptMatches" property of the respective bounding boxes. Also, outlier matches have been removed based on the euclidean distance between them in relation to all the matches in the bounding box.
+ 
+    // (prev, curr) = (source, ref) = (query, train)
+    // associate a given bounding box with the keypoints it contains
+    void clusterKptMatchesWithROI(BoundingBox &boundingBox, std::vector<cv::KeyPoint> &kptsPrev, std::vector<cv::KeyPoint> &kptsCurr, std::vector<cv::DMatch>         &kptMatches)
+    {
+      //**** method  = remove 20% of the high value euclidean distances among keypoints ****//
+      double outlierFilterRatio = 0.2; // remove 20% of the high value euclidean distances among keypoints
+      std::multiset<double> euclideanDistSets;
+
+      // calculate euclidean distance b/w keypoints and insert it to multiset(search tree)
+      for(auto itr = kptMatches.begin(); itr != kptMatches.end(); ++itr)
+      {
+          auto currKpt = kptsCurr[itr->trainIdx];
+          if(boundingBox.roi.contains(currKpt.pt))
+          {
+              auto prevKpt = kptsPrev[itr->queryIdx];
+              double l2Norm = cv::norm(currKpt.pt - prevKpt.pt);
+              euclideanDistSets.insert(l2Norm);
+          }
+      }
+
+      int numOffset = (int)(std::round(outlierFilterRatio * euclideanDistSets.size()));
+      auto rItr = euclideanDistSets.rend(); // reverse iterator( rItr++ = <-  //  rItr-- = ->)
+      std::advance(rItr, numOffset);
+      double filterThreshold = *rItr;
+
+      std::multiset<double> euclideanDistSets2;
+      for(auto itr = kptMatches.begin(); itr != kptMatches.end(); ++itr)
+      {
+          auto currKpt = kptsCurr[itr->trainIdx];
+          if(boundingBox.roi.contains(currKpt.pt))
+          {
+              auto prevKpt = kptsPrev[itr->queryIdx];
+              double l2Norm = cv::norm(currKpt.pt - prevKpt.pt);
+              if (l2Norm <= filterThreshold)
+              {
+                  boundingBox.keypoints.push_back(currKpt);
+                  boundingBox.kptMatches.push_back(*itr);
+              }
+          }
+      }
+      //**** method  = remove 20% of the high value euclidean distances among keypoints ****//    
+    }
