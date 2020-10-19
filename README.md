@@ -255,35 +255,18 @@ Compute the time-to-collision in second for all matched 3D objects using only ke
 ### FP.5 Performance Evaluation 1
 Find examples where the TTC estimate of the Lidar sensor does not seem plausible. Describe your observations and provide a sound argumentation why you think this happened. Several examples (2-3) have been identified and described in detail. The assertion that the TTC is off has been based on manually estimating the distance to the rear of the preceding vehicle from a top view perspective of the Lidar points
 
-| Detector type | Descriptor type | Image number |  TTC of Lidar |  TTC of Camera |
-|:--------:|:--------:|:--------:|:--------:|:--------:|
-| SHITOMASI|         FREAK|          0000|           nans|           nans|
-| SHITOMASI|         FREAK|          0001|       12.6940s|       13.8195s|
-| SHITOMASI|         FREAK|          0002|       12.0310s|       13.3121s|
-| SHITOMASI|         FREAK|          0003|       17.3639s|       12.8840s|
-| SHITOMASI|         FREAK|          0004|       16.0990s|       12.7464s|
-| SHITOMASI|         FREAK|          0005|       13.3004s|       13.4423s|
-| SHITOMASI|         FREAK|          0006|       13.1047s|       14.0207s|
-| SHITOMASI|         FREAK|          0007|       12.1979s|       17.7217s|
-| SHITOMASI|         FREAK|          0008|       13.3858s|       12.9116s|
-| SHITOMASI|         FREAK|          0009|       13.4396s|       12.2294s|
-| SHITOMASI|         FREAK|          0010|       12.1049s|       13.5328s|
-| SHITOMASI|         FREAK|          0011|       12.2210s|       11.6809s|
-| SHITOMASI|         FREAK|          0012|        9.2248s|       11.5191s|
-| SHITOMASI|         FREAK|          0013|        9.5029s|       13.0041s|
-| SHITOMASI|         FREAK|          0014|        9.5302s|       11.6442s|
-| SHITOMASI|         FREAK|          0015|        8.1272s|       11.0141s|
-| SHITOMASI|         FREAK|          0016|        9.9349s|       11.6037s|
-| SHITOMASI|         FREAK|          0017|       10.5262s|       11.0073s|
-| SHITOMASI|         FREAK|          0018|        8.4862s|        7.8567s|
+One example of TTC of Lidar in case of <Detector, Descriptor> = <Shi-Tomashi, FREAK> is as follows.
+As you can see bold time in the columns of TTC of Lidar of below table, a sudden increase in TTC has occured. In the formula for calculating the TTC of Lidar, 
+**TTC = meanXCurr * dT / (meanXPrev - meanXCurr)**, a small value change in x in a continuous frame, **(meanXPrev - meanXCurr)**, caused a sudden increase in TTC.
+This is because distance to preceding car from previous data frame, **meanXPrev**, might have been influenced by some point cloud outliers, which result in shorter distance than the actual tailgate. Some outliers can be removed by sorting the x-values in ascending order, removing the front part and back part and calculating the mean for the rest. 
 
 |Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
 |:--------:|:--------:|:--------:|:--------:|:--------:|
 | SHITOMASI|         FREAK|          0000|           nans|           nans|
 | SHITOMASI|         FREAK|          0001|       12.6940s|       13.8195s|
 | SHITOMASI|         FREAK|          0002|       12.0310s|       13.3121s|
-| SHITOMASI|         FREAK|          0003|       17.3639s|       12.8840s|
-| SHITOMASI|         FREAK|          0004|       16.0990s|       12.7464s|
+| SHITOMASI|         FREAK|          0003|       **17.3639s**|       12.8840s|
+| SHITOMASI|         FREAK|          0004|       **16.0990s**|       12.7464s|
 | SHITOMASI|         FREAK|          0005|       13.3004s|       13.4423s|
 | SHITOMASI|         FREAK|          0006|       13.1047s|       14.0207s|
 | SHITOMASI|         FREAK|          0007|       12.1979s|       17.7217s|
@@ -296,6 +279,6 @@ Find examples where the TTC estimate of the Lidar sensor does not seem plausible
 | SHITOMASI|         FREAK|          0014|        9.5302s|       11.6442s|
 | SHITOMASI|         FREAK|          0015|        8.1272s|       11.0141s|
 | SHITOMASI|         FREAK|          0016|        9.9349s|       11.6037s|
-| SHITOMASI|         FREAK|          0017|       10.5262s|       11.0073s|
+| SHITOMASI|         FREAK|          0017|       **10.5262s**|       11.0073s|
 | SHITOMASI|         FREAK|          0018|        8.4862s|        7.8567s|
 
