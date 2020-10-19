@@ -12,7 +12,7 @@
 ***
 ### Basic Build Instructions
 1. Clone this repo.
-2. Make a build directory in the top level project directory: *mkdir build && cd build*
+2. Make a build directory in the top level project directory: <code> mkdir build && cd build <code>
 3. Compile: *cmake .. && make*
 4. Run it: *./3D_object_tracking.*
 ***
