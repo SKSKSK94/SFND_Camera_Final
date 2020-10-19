@@ -233,7 +233,7 @@ Compute the time-to-collision in second for all matched 3D objects using only ke
             return;
         }
 
-        // STUDENT TASK (replacement for meanDistRatio)
+        // find median distance
         double medianDistRatio;
         std::sort(distRatios.begin(), distRatios.end()); // ascending sorting
         if(distRatios.size() % 2 == 1)
