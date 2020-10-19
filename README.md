@@ -88,7 +88,7 @@ Implement the method "matchBoundingBoxes", which takes as input both the previou
           }
        }
     }
-
+***
 ### FP.2 Compute Lidar-based TTC
 Compute the time-to-collision in second for all matched 3D objects using only Lidar measurements from the matched bounding boxes between current and previous frame. Code is functional and returns the specified output. Also, the code is able to deal with outlier Lidar points in a statistically robust way to avoid severe estimation errors.
 
@@ -139,3 +139,4 @@ Compute the time-to-collision in second for all matched 3D objects using only Li
       // compute TTC from both measurements
       TTC = meanXCurr * dT / (meanXPrev - meanXCurr);    
     }
+***
