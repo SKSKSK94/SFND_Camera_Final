@@ -12,9 +12,9 @@
 ***
 ### Basic Build Instructions
 1. Clone this repo.
-2. Make a build directory in the top level project directory: <code> mkdir build && cd build <code>
-3. Compile: <code> *cmake .. && make* <code>
-4. Run it: <code> *./3D_object_tracking.* <code>
+2. Make a build directory in the top level project directory: <code> mkdir build && cd build
+3. Compile: <code> cmake .. && make 
+4. Run it: <code> ./3D_object_tracking. 
 ***
 ### FP.1 Match 3D Objects
 Implement the method "matchBoundingBoxes", which takes as input both the previous and the current data frames and provides as output the ids of the matched regions of interest (i.e. the boxID property). Matches must be the ones with the highest number of keypoint correspondences. Code is functional and returns the specified output, where each bounding box is assigned the match candidate with the highest number of occurrences.
