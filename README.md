@@ -4,7 +4,9 @@
 
 ### Dependencies for Running Locally
 * cmake >= 2.8
-  * All OSes: click here for installation instructions
+  * All OSes: [click here for installation instructions][cmakelink]
+  [cmakelink]: http://gnuwin32.sourceforge.net/packages/make.htm
+  
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
   * Linux: make is installed by default on most Linux distros
   * Mac: install Xcode command line tools to get make
