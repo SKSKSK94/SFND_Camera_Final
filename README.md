@@ -282,3 +282,7 @@ This is because distance to preceding car from previous data frame, **meanXPrev*
 | SHITOMASI|         FREAK|          0017|       **10.5262s**|       11.0073s|
 | SHITOMASI|         FREAK|          0018|        8.4862s|        7.8567s|
 
+***
+### FP.6 Performance Evaluation 2
+Run several detector / descriptor combinations and look at the differences in TTC estimation. Find out which methods perform best and also include several examples where camera-based TTC estimation is way off. As with Lidar, describe your observations again and also look into potential reasons. All detector / descriptor combinations implemented in previous chapters have been compared with regard to the TTC estimate on a frame-by-frame basis. To facilitate comparison, a spreadsheet and graph should be used to represent the different TTCs.
+
