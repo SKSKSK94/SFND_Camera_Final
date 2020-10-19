@@ -1,7 +1,7 @@
 # SFND_Final
-***
+
 ## Final Project : Track an Object in 3D Space
-***
+
 ### Dependencies for Running Locally
 * cmake >= 2.8
   * All OSes: click here for installation instructions
