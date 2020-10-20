@@ -97,8 +97,8 @@ int main(int argc, const char *argv[])
     bool bVis = false;            // visualize results
 
     // detector, descriptor type
-    std::string detectorType = "SIFT"; //  HARRIS, SHITOMASI, FAST, BRISK, ORB, AKAZE, SIFT
-    std::string descriptorType = "SIFT"; // BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
+    std::string detectorType = "SHITOMASI"; //  HARRIS, SHITOMASI, FAST, BRISK, ORB, AKAZE, SIFT
+    std::string descriptorType = "BRISK"; // BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
 
     // result save vector 
     std::vector<Result> resultVec; 
