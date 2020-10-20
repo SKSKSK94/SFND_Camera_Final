@@ -295,7 +295,7 @@ This is because distance to preceding car from previous data frame, **meanXPrev*
 ### FP.6 Performance Evaluation 2
 Run several detector / descriptor combinations and look at the differences in TTC estimation. Find out which methods perform best and also include several examples where camera-based TTC estimation is way off. As with Lidar, describe your observations again and also look into potential reasons. All detector / descriptor combinations implemented in previous chapters have been compared with regard to the TTC estimate on a frame-by-frame basis. To facilitate comparison, a spreadsheet and graph should be used to represent the different TTCs.
 
-#### 
+#### Why nans?
 The "nans" which can be seen below orgnaized table is because all the distance of possible combinations of two keypoints in one frame image is smaller than the **minDist**(=distance threshold b/w two keypoints in one frame image - _see the third image in FP.4 Compute Camera-based TTC_) which result in the size of **distRatios** vector to be zero. 
   
     if (distPrev > std::numeric_limits<double>::epsilon() && distCurr >= minDist)
@@ -314,7 +314,7 @@ The "nans" which can be seen below orgnaized table is because all the distance o
         return;
     }
     
-#### 
+#### Way off in TTC of Camera
 The way off in TTC of Camera might be due to the lack of the number of matched keypoints(especially in Harris detector -_see below table_) or the lack of qualified matched keypoints
  |Detector/Descriptor|# of matches(10 frames)|# of matches(Average)|
 |:--------:|:--------:|:--------:|
@@ -328,7 +328,7 @@ The way off in TTC of Camera might be due to the lack of the number of matched k
 (BF approach with KNN(descriptor distance ratio = 0.8) used)
 (_The above table is from the midterm project in Camera chapter_)
 
-#### 
+#### Best Combination based on some criteria
 In midterm project we analyze the runtime and matching rate of <detector, descriptor> combination using BF match with KNN. Using the analysis and the TTC of Camera of below tables, the best combination of <detector, descriptor> is as follows.
  |Detector/Descriptor|Criterion|
 |:--------:|:--------:|
@@ -338,6 +338,7 @@ In midterm project we analyze the runtime and matching rate of <detector, descri
 
 For accuracy, # of matches is very important because like Harris detector small # of matches can cause nans. In midterm project Harris Detector has average 16 # of matches, Shi-Tomasi has 80~100 # of matches so in final project Shi-Tomasi performs better than Harris.    
 
+------------------------------------------------------------------------------
 
 |Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
 |:--------:|:--------:|:--------:|:--------:|:--------:|
