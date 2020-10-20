@@ -90,6 +90,10 @@ Implement the method "matchBoundingBoxes", which takes as input both the previou
     }
 ***
 ### FP.2 Compute Lidar-based TTC
+
+![LidarTTC-1](https://user-images.githubusercontent.com/73100569/96540485-d9213480-12d8-11eb-8542-feada2263b36.png)
+![LidarTTC-2](https://user-images.githubusercontent.com/73100569/96540484-d9213480-12d8-11eb-8000-57d7f2d0b645.png)
+
 Compute the time-to-collision in second for all matched 3D objects using only Lidar measurements from the matched bounding boxes between current and previous frame. Code is functional and returns the specified output. Also, the code is able to deal with outlier Lidar points in a statistically robust way to avoid severe estimation errors.
 
     void computeTTCLidar(std::vector<LidarPoint> &lidarPointsPrev, std::vector<LidarPoint> &lidarPointsCurr, double frameRate, double &TTC)
@@ -187,6 +191,11 @@ Prepare the TTC computation based on camera measurements by associating keypoint
     }
 ***
 ### FP.4 Compute Camera-based TTC
+
+![CameraTTC-1](https://user-images.githubusercontent.com/73100569/96540483-d8889e00-12d8-11eb-80de-f33a1903eb2b.png)
+![CameraTTC-2](https://user-images.githubusercontent.com/73100569/96540482-d7f00780-12d8-11eb-9261-8e8f322bea40.png)
+![CameraTTC-3](https://user-images.githubusercontent.com/73100569/96540480-d6264400-12d8-11eb-9cf9-86135d55a17e.jpg)
+
 Compute the time-to-collision in second for all matched 3D objects using only keypoint correspondences from the matched bounding boxes between current and previous frame. Code is functional and returns the specified output. Also, the code is able to deal with outlier correspondences in a statistically robust way to avoid severe estimation errors.
     
     
