@@ -304,12 +304,26 @@ The "nans" which can be seen below orgnaized table is because all the distance o
         distRatios.push_back(distRatio);
     }
 
+    ...(See FP.4 Compute Camera-based TTC for detailed code)
+    ...(See FP.4 Compute Camera-based TTC for detailed code)
 
     if (distRatios.size() == 0)
     {
         TTC = NAN;
         return;
     }
+    
+ The way off in TTC of Camera is due to the lack of the number of matched keypoints(especially in Harris detector) or the lack of qualified matched keypoints
+ |Detector/Descriptor|# of matches(10 frames)|# of matches(Average)|
+|:--------:|:--------:|:--------:|
+|    HARRIS|        |         |        
+|    +BRISK|         10 11 14 13 14 14 16 20 17|          14|
+|    +BRIEF|         10 13 15 15 20 17 16 22 18|          16|
+|    +ORB|         10 13 16 17 18 16 17 21 18|          16|
+|    +FREAK|         9 13 14 14 14 14 12 20 18|          14|
+|    +AKAZE|         Not working|          Not working|
+|    +SIFT|         10 13 17 15 19 17 14 23 19|          16|
+ 
     
 
 
