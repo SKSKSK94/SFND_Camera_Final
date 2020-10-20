@@ -37,6 +37,7 @@ In this final project, you will implement the missing parts in the schematic. To
 ***
 ### Result
 <img src="result_video.gif" width="950" height="250" />
+
 ***
 ### FP.1 Match 3D Objects
 Implement the method "matchBoundingBoxes", which takes as input both the previous and the current data frames and provides as output the ids of the matched regions of interest (i.e. the boxID property). Matches must be the ones with the highest number of keypoint correspondences. Code is functional and returns the specified output, where each bounding box is assigned the match candidate with the highest number of occurrences.
