@@ -336,7 +336,7 @@ The "nans" which can be seen below orgnaized table is because all the distance o
 #### Way off in TTC of Camera
 The way off in TTC of Camera might be due to the lack of the number of matched keypoints(especially in Harris detector -_see below table_) or the lack of qualified matched keypoints
  |Detector/Descriptor|# of matches(10 frames)|# of matches(Average)|
-|:--------:|:--------:|:--------:|
+|:--------:|:--------:|:----:|
 |    HARRIS|        |         |        
 |    +BRISK|         10 11 14 13 14 14 16 20 17|          14|
 |    +BRIEF|         10 13 15 15 20 17 16 22 18|          16|
@@ -344,6 +344,7 @@ The way off in TTC of Camera might be due to the lack of the number of matched k
 |    +FREAK|         9 13 14 14 14 14 12 20 18|          14|
 |    +AKAZE|         Not working|          Not working|
 |    +SIFT|         10 13 17 15 19 17 14 23 19|          16|
+
 (BF approach with KNN(descriptor distance ratio = 0.8) used)
 (_The above table is from the midterm project in Camera chapter_)
 
