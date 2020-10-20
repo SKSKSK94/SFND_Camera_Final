@@ -256,9 +256,9 @@ Compute the time-to-collision in second for all matched 3D objects using only ke
 Find examples where the TTC estimate of the Lidar sensor does not seem plausible. Describe your observations and provide a sound argumentation why you think this happened. Several examples (2-3) have been identified and described in detail. The assertion that the TTC is off has been based on manually estimating the distance to the rear of the preceding vehicle from a top view perspective of the Lidar points
 
 One example of TTC of Lidar in case of <Detector, Descriptor> = <Shi-Tomashi, FREAK> is as follows.
-As you can see bold time in the columns of TTC of Lidar of below table, a sudden increase in TTC has occured. In the formula for calculating the TTC of Lidar, 
+As you can see bold time in the column of TTC of Lidar of below table, a sudden increase in TTC has occured. In the formula for calculating the TTC of Lidar, 
 **TTC = meanXCurr * dT / (meanXPrev - meanXCurr)**, a small value change in x in a continuous frame, **(meanXPrev - meanXCurr)**, caused a sudden increase in TTC.
-This is because distance to preceding car from previous data frame, **meanXPrev**, might have been influenced by some point cloud outliers, which result in shorter distance than the actual tailgate. Some outliers can be removed by sorting the x-values in ascending order, removing the front part and back part and calculating the mean for the rest(This can be found in the code in **FP.2**) . By doing so, some way off can be removed.
+This is because distance to preceding car from previous data frame, **meanXPrev**, might have been influenced by some point cloud outliers, which result in shorter distance than the actual tailgate. Some of these outliers can be removed by sorting the x-values in ascending order, removing the front part and back part and calculating the mean for the rest(This can be found in the code in **FP.2**). By doing so, some way off can be removed but the rest of the way off(**bold type time in the TTC of Lidar column**) seems to be because the overall point cloud datas are skewed to one side considering top view image of point cloud within interesting bounding box.
 
 |Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
 |:--------:|:--------:|:--------:|:--------:|:--------:|
