@@ -267,7 +267,7 @@ Find examples where the TTC estimate of the Lidar sensor does not seem plausible
 One example of TTC of Lidar in case of <Detector, Descriptor> = <Shi-Tomashi, FREAK> is as follows.
 As you can see bold time in the column of TTC of Lidar of below table, a sudden increase in TTC has occured. In the formula for calculating the TTC of Lidar, 
 **TTC = meanXCurr * dT / (meanXPrev - meanXCurr)**, a small value change in x in a continuous frame, **(meanXPrev - meanXCurr)**, caused a sudden increase in TTC.
-This is because distance to preceding car from previous data frame, **meanXPrev**, might have been influenced by some point cloud outliers, which result in shorter distance than the actual tailgate. Some of these outliers can be removed by sorting the x-values in ascending order, removing the front part and back part and calculating the mean for the rest(This can be found in the code in **FP.2**). By doing so, some way off can be removed but the rest of the way off(**bold type time in the TTC of Lidar column**) seems to be because the overall point cloud datas are skewed to one side considering top view image of point cloud within interesting bounding box.
+This is because distance to preceding car from previous data frame, **meanXPrev**, might have been influenced by some point cloud outliers, which result in shorter distance than the actual tailgate. Some of these outliers can be removed by sorting the x-values in ascending order, removing the front part and back part and calculating the mean for the rest(This can be found in the code in **FP.2**). By doing so, some way off can be removed but the rest of the way off(**bold type time in the TTC of Lidar column**) seems to be because the overall point cloud datas are skewed to one side considering top view image of point cloud within interesting bounding box. One of the other ways to solve this problem is to use a bigger **shrinkFactor**(=0.1~0.2) in order to get more stable and reliable cloud points within interesting bounding box.
 
 |Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
 |:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -294,6 +294,24 @@ This is because distance to preceding car from previous data frame, **meanXPrev*
 ***
 ### FP.6 Performance Evaluation 2
 Run several detector / descriptor combinations and look at the differences in TTC estimation. Find out which methods perform best and also include several examples where camera-based TTC estimation is way off. As with Lidar, describe your observations again and also look into potential reasons. All detector / descriptor combinations implemented in previous chapters have been compared with regard to the TTC estimate on a frame-by-frame basis. To facilitate comparison, a spreadsheet and graph should be used to represent the different TTCs.
+
+The "nans" which can be seen below orgnaized table is because all the distance of possible combinations of two keypoints in one frame image is smaller than the **minDist**(=distance threshold b/w two keypoints in one frame image - _see the third image in FP.4 Compute Camera-based TTC_) which result in the size of **distRatios** vector to be zero. 
+  
+    if (distPrev > std::numeric_limits<double>::epsilon() && distCurr >= minDist)
+    { // avoid division by zero
+
+        double distRatio = distCurr / distPrev;
+        distRatios.push_back(distRatio);
+    }
+
+
+    if (distRatios.size() == 0)
+    {
+        TTC = NAN;
+        return;
+    }
+    
+
 
 |Detector type|Descriptor type|Image number|TTC of Lidar|TTC of Camera|
 |:--------:|:--------:|:--------:|:--------:|:--------:|
